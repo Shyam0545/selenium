@@ -20,9 +20,9 @@ options.addArguments("--disable-dev-shm-usage");
 options.addArguments("--headless");
 WebDriver driver = new ChromeDriver(options);
 //it will open the goggle page
-driver.get("https://www.google.com/"); 
+driver.get("http://172.17.0.2"); 
 //we expect the title “Google “ should be present 
-String Expectedtitle = "Google";
+String Expectedtitle = "Home";
 //it will fetch the actual title 
 String Actualtitle = driver.getTitle();
 System.out.println("Before Assetion " + Expectedtitle + Actualtitle);
