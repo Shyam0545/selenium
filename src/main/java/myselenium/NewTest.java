@@ -22,7 +22,7 @@ WebDriver driver = new ChromeDriver(options);
 //it will open the goggle page
 driver.get("http://172.17.0.2"); 
 //we expect the title “Google “ should be present 
-String Expectedtitle = "Home";
+String Expectedtitle = "Home | Simple PHP Website";
 //it will fetch the actual title 
 String Actualtitle = driver.getTitle();
 System.out.println("Before Assetion " + Expectedtitle + Actualtitle);
