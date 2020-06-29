@@ -28,7 +28,7 @@ public class NewTest {
 	}	
 	@BeforeTest
 	public void beforeTest() {	
-	    driver = new ChromeDriver();  
+	    //driver = new ChromeDriver();  
 	}		
 	@AfterTest
 	public void afterTest() {
