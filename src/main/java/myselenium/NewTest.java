@@ -14,9 +14,9 @@ public void testgooglesearch(){
 System.setProperty("webdriver.chrome.driver","/home/edureka/chromedriver");
 WebDriver driver = new ChromeDriver();
 //it will open the goggle page
-driver.get("http://172.17.0.2"); 
+driver.get("https://www.google.com/"); 
 //we expect the title “Google “ should be present 
-String Expectedtitle = "Home";
+String Expectedtitle = "Google";
 //it will fetch the actual title 
 String Actualtitle = driver.getTitle();
 System.out.println("Before Assetion " + Expectedtitle + Actualtitle);
