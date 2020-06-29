@@ -13,11 +13,12 @@ public class NewTest
 public void testgooglesearch(){
 
 System.setProperty("webdriver.chrome.driver","/home/edureka/chromedriver");
-WebDriver driver = new ChromeDriver();
+
 ChromeOptions options = new ChromeOptions();
 options.addArguments("--no-sandbox");
 options.addArguments("--disable-dev-shm-usage");
 options.addArguments("--headless");
+WebDriver driver = new ChromeDriver(options);
 //it will open the goggle page
 driver.get("https://www.google.com/"); 
 //we expect the title “Google “ should be present 
